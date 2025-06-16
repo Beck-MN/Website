@@ -71,6 +71,6 @@ MIT License - feel free to use this template for your own portfolio!
 
 ## Contact
 
-Your Name - [Beck.Christensen@gmail.com](mailto:beck.christensen@gmail.com)
+Me - [Beck.Christensen@gmail.com](mailto:beck.christensen@gmail.com)
 
 Project Link: [https://github.com/Beck-MN/Website](https://github.com/Beck-MN/Website)
