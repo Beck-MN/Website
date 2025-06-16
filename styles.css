@@ -93,7 +93,15 @@ p, li {
 }
 
 .badge.tools {
-  background-color: #6c5ce7;
+  background-color: #814cbe;
+}
+
+.badge.library {
+  background-color: #e17055;
+}
+
+.badge.software {
+  background-color: #0984e3;
 }
 
 .icon-links a {
