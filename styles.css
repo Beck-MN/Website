@@ -312,3 +312,15 @@ strong {
 .project-image:hover .image-overlay {
   opacity: 1;
 }
+
+footer p {
+  color: #a0a0a0;
+}
+
+footer a {
+  color: #a0a0a0;
+}
+
+footer a:hover {
+  color: #fff4b7;
+}
