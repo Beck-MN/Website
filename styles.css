@@ -4,7 +4,7 @@
   --text-muted: #a0a0a0;
   --card-bg: #2a2a2e;
   --card-highlight-bg: #2e1f1f;
-  --accent: #006A67;
+  --accent: #006a67;
   --badge-text: #f1f1f1;
   --divider: linear-gradient(to right, #2a2a2e, #1a1a1a);
 }
@@ -12,7 +12,7 @@
 body {
   background-color: var(--bg);
   color: var(--text);
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
   padding: 2rem 1rem 4rem 1rem;
 }
 
@@ -21,14 +21,20 @@ body {
   background: var(--divider);
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Work Sans', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Work Sans", sans-serif;
   font-weight: 600;
   color: var(--text);
 }
 
-p, li {
-  font-family: 'Lora', serif;
+p,
+li {
+  font-family: "Lora", serif;
   font-size: 1rem;
   color: var(--text);
 }
@@ -46,6 +52,12 @@ p, li {
   border-radius: 50%;
   margin-bottom: 1rem;
   border: 4px solid var(--accent);
+}
+
+.intro h1 {
+  font-family: "FreeMono", monospace;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 
 .text-muted {
@@ -85,7 +97,7 @@ p, li {
 }
 
 .badge.lang {
-  background-color: #006A67;
+  background-color: #006a67;
 }
 
 .badge.framework {
@@ -93,20 +105,20 @@ p, li {
 }
 
 .badge.tools {
-  background-color: #006A67;
+  background-color: #006a67;
 }
 
 .badge.library {
-  background-color: #000B58;
+  background-color: #000b58;
 }
 
 .badge.software {
-  background-color: #FFF4B7;
-  color: #000B58;
+  background-color: #fff4b7;
+  color: #000b58;
 }
 
 .icon-links a {
-  color: #006A67;
+  color: #006a67;
   margin-right: 1rem;
   font-size: 1.3rem;
   cursor: pointer;
@@ -128,7 +140,7 @@ p, li {
 }
 
 .experience-entry:nth-child(1) {
-  border-left-color: #006A67;
+  border-left-color: #006a67;
 }
 
 .experience-entry:nth-child(2) {
@@ -136,7 +148,7 @@ p, li {
 }
 
 .experience-entry:nth-child(3) {
-  border-left-color: #000B58;
+  border-left-color: #000b58;
 }
 
 .experience-entry h6 {
@@ -161,7 +173,7 @@ p, li {
 }
 
 .experience-entry.current-role:nth-child(1) {
-  border-left-color: #006A67;
+  border-left-color: #006a67;
   background-color: rgba(0, 106, 103, 0.1);
 }
 
@@ -171,7 +183,7 @@ p, li {
 }
 
 .experience-entry.current-role:nth-child(3) {
-  border-left-color: #000B58;
+  border-left-color: #000b58;
   background-color: rgba(0, 11, 88, 0.1);
 }
 
@@ -184,7 +196,7 @@ p, li {
 
 .exp-list li {
   margin-bottom: 0.4rem;
-  font-family: 'Lora', serif;
+  font-family: "Lora", serif;
   font-size: 1rem;
   line-height: 1.4;
 }
@@ -201,7 +213,7 @@ p, li {
 }
 
 a {
-  color: #006A67;
+  color: #006a67;
   text-decoration: none;
   transition: color 0.2s;
 }
@@ -257,7 +269,7 @@ strong {
   transition: opacity 0.3s ease;
   padding: 1rem;
   text-align: center;
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
 }
 
 .project-image:hover .image-overlay {
@@ -269,4 +281,4 @@ strong {
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 1rem;
-} 
+}
