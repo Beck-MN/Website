@@ -168,7 +168,9 @@ li {
 .experience-entry {
   border-left: 4px solid var(--accent);
   margin-bottom: 1.5rem;
-  padding-left: 1rem;
+  background-color: rgba(160, 160, 160, 0.05);
+  padding: 10px 5px 10px 1.25rem;
+  border-radius: 4px;
 }
 
 .experience-entry:nth-child(1) {
@@ -201,7 +203,7 @@ li {
 .experience-entry.current-role {
   border-left: 6px solid var(--accent);
   background-color: var(--card-highlight-bg);
-  padding: 10px 5px;
+  padding: 10px 5px 10px 1.25rem;
 }
 
 .experience-entry.current-role:nth-child(1) {
