@@ -38,8 +38,27 @@
 </head>
 
 <body data-theme="dark">
+  <nav class="section-nav" aria-label="Jump to section">
+    <button type="button" class="section-nav-toggle" id="section-nav-toggle" aria-expanded="false"
+      aria-controls="section-nav-menu" aria-haspopup="true" aria-label="Open section menu">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+        class="bi bi-list section-nav-icon" viewBox="0 0 16 16" aria-hidden="true">
+        <path fill-rule="evenodd"
+          d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+      </svg>
+    </button>
+    <div class="section-nav-menu" id="section-nav-menu" aria-hidden="true">
+      <a href="#intro">Intro</a>
+      <a href="#education">Education</a>
+      <a href="#experience">Work experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#skills">Skills</a>
+    </div>
+  </nav>
+
   <div class="container">
-    <div class="intro">
+    <div class="intro" id="intro">
       <img src="pics/me.jpg" alt="Beck Christensen" class="profile"
         style="object-fit: cover; object-position: center;" />
       <h1>Charles Beck Christensen</h1>
@@ -67,7 +86,7 @@
     </div>
 
     <!-- Education -->
-    <div class="card highlight mb-4">
+    <div class="card highlight mb-4" id="education">
       <div class="card-body d-flex flex-column flex-md-row justify-content-between align-items-start">
         <div class="flex-grow-1">
           <h5>Saint Cloud State University</h5>
@@ -95,7 +114,7 @@
     </div>
 
     <!-- Work Experience -->
-    <h4 class="mb-3">Work Experience</h4>
+    <h4 class="mb-3" id="experience">Work Experience</h4>
     <div class="card mb-4">
       <div class="card-body">
         <div class="experience-entry current-role">
@@ -196,7 +215,49 @@
     </div>
 
     <!-- Projects -->
-    <h4 class="mb-3">Projects</h4>
+    <h4 class="mb-3" id="projects">Projects</h4>
+
+
+    <div class="card mb-4 project-card">
+      <div class="card-body">
+        <h5>Web Development for PEAK Health Nepal | Senior Project</h5>
+        <div class="d-flex justify-content-between align-items-center mb-2">
+          <p class="text-muted mb-0">React, PostgreSQL, Node.js</p>
+          <p class="text-muted mb-0">Fall 2025 - Spring 2026</p>
+        </div>
+        <p>
+          My senior project involved developing a web platform that
+          work to expand access to quality healthcare in underserved regions. The project focused on building a website
+          for an ICU unit in Nepal that supports both fundraising and medical education. The site allows users to donate
+          directly to support critical care services, helping address gaps in healthcare access in remote communities
+          where resources are often limited. In addition, the platform provides nurses with
+          access to training materials and resources to improve patient care and clinical skills. Administrative
+          controls were also implemented, enabling staff to manage content, oversee donations, and maintain the system
+          efficiently, creating a centralized, scalable tool to support both the operational and educational needs of
+          the ICU.
+        </p>
+        <div class="project-images-container">
+          <div class="project-image">
+            <img src="pics/peak_homepage.jpg" alt="PEAK Health Nepal Homepage" />
+            <div class="image-overlay">
+              <p>
+                Homepage of the PEAK Health Nepal website
+              </p>
+            </div>
+          </div>
+          <div class="project-image">
+            <img src="pics/peak_donation_page.jpg" alt="PEAK Health Nepal Donation Page" />
+            <div class="image-overlay">
+              <p>PEAK Health Nepal Donation Page</p>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="icon-links">
+          <a href="https://peakhealthnepal.org" target="_blank"><i class="fas fa-globe"></i></a>
+        </div>
+      </div>
+    </div>
 
     <!-- KVSC Spotify Project -->
     <div class="card mb-4 project-card">
@@ -354,7 +415,7 @@
     </div>
 
     <!-- Image Gallery -->
-    <h4 class="mb-3">Image Gallery</h4>
+    <h4 class="mb-3" id="gallery">Image Gallery</h4>
     <div class="card mb-4">
       <div class="card-body">
         <div class="row g-3" id="imageGallery">
@@ -432,7 +493,7 @@
     </div>
 
     <!-- Skills -->
-    <h4 class="mb-3">Skills</h4>
+    <h4 class="mb-3" id="skills">Skills</h4>
     <div class="card mb-4">
       <div class="card-body">
         <div class="mb-2"><strong>Languages</strong></div>
@@ -532,6 +593,49 @@
       document.getElementById('modalImage').alt = title;
       document.getElementById('imageModalLabel').textContent = title;
     }
+
+    (function () {
+      var nav = document.querySelector('.section-nav');
+      var toggle = document.getElementById('section-nav-toggle');
+      var menu = document.getElementById('section-nav-menu');
+      if (!nav || !toggle || !menu) return;
+
+      function setOpen(open) {
+        nav.classList.toggle('section-nav--open', open);
+        toggle.setAttribute('aria-expanded', open);
+        toggle.setAttribute('aria-label', open ? 'Close section menu' : 'Open section menu');
+        menu.setAttribute('aria-hidden', !open);
+      }
+
+      nav.addEventListener('click', function (e) {
+        e.stopPropagation();
+      });
+
+      toggle.addEventListener('click', function () {
+        setOpen(!nav.classList.contains('section-nav--open'));
+      });
+
+      document.addEventListener('click', function () {
+        setOpen(false);
+      });
+
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') setOpen(false);
+      });
+
+      menu.querySelectorAll('a[href^="#"]').forEach(function (link) {
+        link.addEventListener('click', function (e) {
+          e.preventDefault();
+          var hash = link.getAttribute('href');
+          var el = document.querySelector(hash);
+          if (!el) return;
+          var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+          el.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth', block: 'start' });
+          setOpen(false);
+          if (history.replaceState) history.replaceState(null, '', hash);
+        });
+      });
+    })();
   </script>
 </body>
 
