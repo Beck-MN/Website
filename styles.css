@@ -364,6 +364,7 @@ h3 {
 .button {
   display: inline-flex;
   align-items: center;
+  gap: 0.45rem;
   min-height: 2.75rem;
   padding: 0.72rem 1rem;
   border: 1px solid var(--line);
@@ -372,6 +373,10 @@ h3 {
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.06em;
+}
+
+.button svg {
+  flex-shrink: 0;
 }
 
 .button:hover {
