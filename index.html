@@ -4,636 +4,589 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Beck Christensen | Engineer</title>
-
-  <!-- Meta Description & Keywords -->
-  <meta name="description" content="Portfolio website showcasing projects, education, and work experience." />
-  <meta name="keywords" content="Portfolio, Software Engineer, Developer, Projects" />
-
-  <!-- Canonical URL -->
+  <title>Beck Christensen | Software Engineer</title>
+  <meta name="description"
+    content="Charles Beck Christensen is a recent software engineering graduate building backend and full-stack products with Go, React, PostgreSQL, and Node.js." />
+  <meta name="keywords" content="Portfolio, Software Engineer, Developer, Projects, Backend, Full Stack" />
   <link rel="canonical" href="https://beckchristensen.dev" />
-
-  <!-- Open Graph / Facebook -->
-  <meta property="og:title" content="Beck Christensen — Portfolio" />
-  <meta property="og:description" content="Explore my portfolio showcasing projects and experience." />
-  <meta property="og:image" content="https://beckchristensen.dev/pics/profile.jpg" />
+  <meta property="og:title" content="Beck Christensen - Software Engineer" />
+  <meta property="og:description" content="Backend and full-stack projects, experience, and skills." />
   <meta property="og:url" content="https://beckchristensen.dev" />
   <meta property="og:type" content="website" />
-
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Beck Christensen — Portfolio" />
-  <meta name="twitter:description" content="Software Engineer building impactful solutions." />
-  <meta name="twitter:image" content="https://beckchristensen.dev/pics/profile.jpg" />
-
-  <!-- Favicon -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Beck Christensen - Software Engineer" />
+  <meta name="twitter:description" content="Backend and full-stack projects, experience, and skills." />
   <link rel="icon" href="pics/favicon.ico" type="image/x-icon" />
-
-  <!-- Styles & Fonts -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Lora&family=Work+Sans:wght@400;500;600&display=swap"
-    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@500;600;700&display=swap" rel="stylesheet" />
   <link href="styles.css" rel="stylesheet" />
 </head>
 
-<body data-theme="dark">
-  <nav class="section-nav" aria-label="Jump to section">
-    <button type="button" class="section-nav-toggle" id="section-nav-toggle" aria-expanded="false"
-      aria-controls="section-nav-menu" aria-haspopup="true" aria-label="Open section menu">
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-        class="bi bi-list section-nav-icon" viewBox="0 0 16 16" aria-hidden="true">
-        <path fill-rule="evenodd"
-          d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
-      </svg>
-    </button>
-    <div class="section-nav-menu" id="section-nav-menu" aria-hidden="true">
-      <a href="#intro">Intro</a>
-      <a href="#education">Education</a>
-      <a href="#experience">Work experience</a>
-      <a href="#projects">Projects</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#skills">Skills</a>
-    </div>
-  </nav>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <div class="container">
-    <div class="intro" id="intro">
-      <img src="pics/me.jpg" alt="Beck Christensen" class="profile"
-        style="object-fit: cover; object-position: center;" />
-      <h1>Charles Beck Christensen</h1>
-      <p>
-        <i>Student Software Engineer </i> @
-        <a href="https://www.stcloudstate.edu" target="_blank">St. Cloud State University</a>
-      </p>
-      <hr style="width: 65%; margin: auto" />
-      <p class="education-links mt-3">
-        <a href="https://github.com/Beck-MN" class="me-3" target="_blank">
-          <i class="fab fa-github"></i> GitHub
-        </a>
-        <a href="https://www.linkedin.com/in/charles-beck-christensen/" class="me-3" target="_blank">
-          <i class="fab fa-linkedin"></i> LinkedIn
-        </a>
-        <br>
-        <a href="mailto:beck.christensen@gmail.com" class="me-3" target="_blank">
-          <i class="fas fa-envelope"></i> beck.christensen@gmail.com
-        </a>
-        <br>
-        <a href="docs/Charles_Beck_Christensen_Resume.pdf" class="btn btn-outline-light mt-3" download>
-          <i class="fas fa-file-pdf"></i> Resume
-        </a>
-      </p>
+  <header class="site-header" aria-label="Primary">
+    <a class="brand" href="#intro" aria-label="Back to top">
+      <span class="brand-icon" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+          class="bi bi-emoji-smile-upside-down" viewBox="0 0 16 16">
+          <path d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1m0-1a8 8 0 1 1 0 16A8 8 0 0 1 8 0" />
+          <path
+            d="M4.285 6.433a.5.5 0 0 0 .683-.183A3.5 3.5 0 0 1 8 4.5c1.295 0 2.426.703 3.032 1.75a.5.5 0 0 0 .866-.5A4.5 4.5 0 0 0 8 3.5a4.5 4.5 0 0 0-3.898 2.25.5.5 0 0 0 .183.683M7 9.5C7 8.672 6.552 8 6 8s-1 .672-1 1.5.448 1.5 1 1.5 1-.672 1-1.5m4 0c0-.828-.448-1.5-1-1.5s-1 .672-1 1.5.448 1.5 1 1.5 1-.672 1-1.5" />
+        </svg>
+      </span>
+      <span class="brand-text">
+        <span class="brand-name">Charles Beck Christensen</span>
+        <span class="brand-role">Software Engineer</span>
+      </span>
+    </a>
+    <div class="header-menu">
+      <button class="menu-toggle" type="button" id="menu-toggle" aria-expanded="false" aria-controls="menu-panel"
+        aria-label="Open navigation menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list-nested"
+          viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M4.5 11.5A.5.5 0 0 1 5 11h10a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5m-2-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m-2-4A.5.5 0 0 1 1 3h10a.5.5 0 0 1 0 1H1a.5.5 0 0 1-.5-.5" />
+        </svg>
+      </button>
+      <div class="menu-panel" id="menu-panel">
+        <nav class="site-nav" aria-label="Site">
+          <a href="#experience">Experience</a>
+          <a href="#skills">Skills</a>
+          <a href="#work">Work</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="divider hide-mobile">|</div>
+        <nav class="contact-nav" aria-label="External links">
+          <a href="https://github.com/Beck-MN" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/charles-beck-christensen/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="mailto:beck.christensen@gmail.com">Email</a>
+        </nav>
+      </div>
     </div>
+  </header>
 
-    <!-- Education -->
-    <div class="card highlight mb-4" id="education">
-      <div class="card-body d-flex flex-column flex-md-row justify-content-between align-items-start">
-        <div class="flex-grow-1">
-          <h5>Saint Cloud State University</h5>
-          <p class="text-muted mb-1">
-            B.S.E. in Software Engineering - <strong>Class of 2026</strong>
+  <main id="main">
+    <section class="hero section" id="intro" aria-labelledby="intro-title">
+      <p class="eyebrow">Open to full-time roles in backend or full-stack development</p>
+
+      <div class="hero-layout">
+        <div class="hero-intro">
+          <p class="intro-label">Welcome in! :D</p>
+          <h1 id="intro-title">
+            <span class="fancy-title">Software Development</span>
+            <span class="divider punct">/</span>
+            <span class="fancy-subtitle">Audio Engineering<span class="punct">.</span></span>
+          </h1>
+          <p class="hero-copy">
+            Hey! My name is Charles Beck Christensen and I'm a recent software engineering graduate from
+            <a href="https://www.stcloudstate.edu" target="_blank" rel="noopener">St. Cloud State University</a>.
+            I've helped build practical systems with Go, PostgreSQL, gRPC, React, Node.js, and Python. I also work with
+            audio for
+            radio, live sound, and music post-production.
           </p>
-          <ul>
-            <li>
-              <span style="font-weight: 900">Key Courses:</span> Data
-              Structures, Object-Oriented Programming, Intro to Software
-              Engineering, Computer Organization, Operating Systems, Software
-              Design, Software Analysis, Sofware Quality, Software
-              Construction, Game Development, Software Reverse Engineering,
-              Human Computer Interaction, Database Systems, and more.
-            </li>
-            <li>
-              <span style="font-weight: 900">Activities:</span> Dept of
-              Theater Member (Cast and Crew), KVSC 88.1FM Music Director and
-              Sound Engineer, Writer for UTVS Husky Tonight, Video Production
-              Assistant at HBNHC, and more.
-            </li>
-          </ul>
+          <div class="hero-actions" aria-label="Primary actions">
+            <a class="button button-primary" href="docs/Charles_Beck_Christensen_Resume.pdf" download>Download
+              resume</a>
+            <a class="button" href="#work">See proof</a>
+          </div>
+        </div>
+        <figure class="hero-portrait">
+          <img src="pics/me.jpg" alt="Charles Beck Christensen at the KVSC 88.1 FM audio board" width="794"
+            height="612" />
+        </figure>
+      </div>
+
+
+    </section>
+
+    <section class="section education-section" id="education" aria-labelledby="education-title">
+      <div class="section-heading">
+        <p class="section-kicker">Education</p>
+        <h2 id="education-title">Saint Cloud State University</h2>
+      </div>
+      <div class="education-layout">
+        <p class="education-degree">B.S.E. in Software Engineering - Graduated 2026</p>
+        <div>
+          <p>
+            <strong>Key Courses:</strong> Data Structures, Object-Oriented Programming, Intro to Software Engineering,
+            Computer Organization, Operating Systems, Software Design, Software Analysis, Sofware Quality, Software
+            Construction, Game Development, Software Reverse Engineering, Human Computer Interaction, Database Systems,
+            and more.
+          </p>
+          <p>
+            <strong>Activities:</strong> Dept of Theater Member (Cast and Crew), KVSC 88.1FM Music Director and Sound
+            Engineer, Writer for UTVS Husky Tonight, Video Production Assistant at HBNHC, and more.
+          </p>
         </div>
       </div>
-    </div>
+    </section>
 
-    <!-- Work Experience -->
-    <h4 class="mb-3" id="experience">Work Experience</h4>
-    <div class="card mb-4">
-      <div class="card-body">
-        <div class="experience-entry current-role">
-          <h6>
-            KVSC 88.1 FM -
-            <a href="https://kvsc.org" target="_blank">Your Sound Alternative</a>
-          </h6>
-          <div class="role">St. Cloud · May 2023 – Present</div>
-          <ul class="exp-list">
-            <li style="list-style-type: none; position: relative;">
-              <span style="position: absolute; left: -1em;">–</span>
-              <strong>Music Director:</strong>
-              <ul>
-                <li>Responsible for reviewing and curating incoming music</li>
-                <li>Maintain communication with record labels</li>
-                <li>Manage the station's music rotation</li>
-                <li>Oversee scheduling for KVEX 97.5FM, our sister station specializing in '90s alternative music</li>
-                <li>Ensure consistent, high-quality programming across both platforms</li>
-                <li>Delegate tasks within the music department</li>
-                <li>Supervise assistants and contribute to station operations efficiency</li>
-              </ul>
-            </li>
-            <li style="list-style-type: none; position: relative;">
-              <span style="position: absolute; left: -1em;">–</span>
-              <strong>Sound Engineer:</strong>
-              <ul>
-                <li>Assisted in live sound production for station events, concerts and remote broadcasts</li>
-                <li>Ensured high-quality audio setup and performance</li>
-                <li>Served as primary mixer and mastering engineer for <a
-                    href="https://kvsc.bandcamp.com/album/monday-night-live-season-34" target="_blank">Monday Night Live
-                    CD</a> (season 34 and 35)</li>
-                <li>Oversaw post-production to deliver polished final products</li>
-                <li>Operated on-air board during Monday Night Live broadcasts</li>
-                <li>Managed live mixing, audio levels, and transitions</li>
-              </ul>
-            </li>
-            <li style="list-style-type: none; position: relative;">
-              <span style="position: absolute; left: -1em;">–</span>
-              <strong>On-Air Host:</a></strong>
-              <ul>
-                <li>Hosted <a href="https://spinitron.com/KVSC/dj/172772/Beck" target="_blank">various programs</a> for
-                  the station such as Indie Brunch, Late Night Progressive Rock Show, and
-                  more</li>
-                <li>Created, produced, and hosted <a href="https://spinitron.com/KVSC/show/289520/The-Moshpit"
-                    target="_blank">"The Moshpit"</a>, a weekly metal music show.</li>
-                <li>Host and producer for <a
-                    href="https://drive.google.com/drive/folders/1A9IMFSlSN50rLagsaQSHKBkP95zZMX10?usp=drive_link"
-                    target="_blank">"Crispy Critics"</a>, a music review show</li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-
-        <div class="experience-entry">
-          <h6>
-            Software Engineer Intern @
-            <a href="https://www.joinrefine.io" target="_blank">refine.</a>
-          </h6>
-          <div class="role">New York, NY (Remote) · June 2025 – August 2025</div>
-          <ul class="exp-list">
-            <li>Contributed to the development of an AI-powered search platform</li>
-            <li>Built backend services using GoLang, PostgreSQL, and gRPC</li>
-            <li>Developed frontend components with React and TailwindCSS</li>
-            <li>Pushed multiple features to production</li>
-            <li>Collaborated with cross-functional teams to support feature development</li>
-            <li>Wrote clean, testable code and participated in code reviews</li>
-            <li>Engaged in agile practices including sprint planning and retrospectives</li>
-            <li>Gained hands-on experience with CI/CD pipelines and cloud infrastructure</li>
-            <li>Documented internal APIs and explored technologies for platform scalability</li>
-            <li>Coded and deployed an internal tool to help development with LLMs</li>
-          </ul>
-        </div>
-        <div class="experience-entry">
-          <h6>
-            Video Production Assistant @ Herb Brook National Hockey Center
-          </h6>
-          <div class="role">St. Cloud · September 2024 – Present</div>
-          <ul class="exp-list">
-            <li>
-              Operated replay camera and produce game melts for the St. Cloud
-              State University women's hockey team
-            </li>
-            <li>
-              Assisted in the setup, operation, and teardown of penalty box
-              and robotic camera systems
-            </li>
-            <li>
-              Supported live streaming and recording of SCSU men's and women's
-              hockey games
-            </li>
-            <li>
-              Collaborated with production crew in a fast-paced, live sports
-              environment
-            </li>
-          </ul>
-        </div>
+    <section class="section experience-section" id="experience" aria-labelledby="experience-title">
+      <div class="section-heading">
+        <p class="section-kicker">Experience</p>
+        <h2 id="experience-title">Software, operations, and production work<span class="punct">.//</span></h2>
       </div>
-    </div>
+      <div class="timeline">
+        <article class="timeline-item">
+          <div class="timeline-date">June 2025 - August 2025</div>
+          <div>
+            <h3>
+              Software Engineer Intern @
+              <a href="https://www.joinrefine.io" target="_blank" rel="noopener">refine.</a>
+            </h3>
+            <p class="role">New York, NY (Remote)</p>
+            <ul>
+              <li>Contributed to the development of an AI-powered search platform.</li>
+              <li>Built backend services using GoLang, PostgreSQL, and gRPC.</li>
+              <li>Developed frontend components with React and TailwindCSS.</li>
+              <li>Pushed multiple features to production and participated in code reviews.</li>
+              <li>Gained hands-on experience with CI/CD pipelines and cloud infrastructure.</li>
+              <li>Coded and deployed an internal tool to help development with LLMs.</li>
+            </ul>
+          </div>
+        </article>
 
-    <!-- Projects -->
-    <h4 class="mb-3" id="projects">Projects</h4>
+        <article class="timeline-item">
+          <div class="timeline-date">May 2023 - Present</div>
+          <div>
+            <h3>
+              KVSC 88.1 FM -
+              <a href="https://kvsc.org" target="_blank" rel="noopener">Your Sound Alternative</a>
+            </h3>
+            <p class="role">St. Cloud, MN</p>
+            <ul>
+              <li>
+                <strong>Music Director:</strong>
+                <ul>
+                  <li>Reviewed and categorized incoming releases from labels, distributors, and promo contacts</li>
+                  <li>Determined placement for regular rotation, specialty programming, and volunteer show libraries
+                  </li>
+                  <li>Maintained ongoing communication with record labels, tracked submissions, and kept catalog
+                    metadata current in MusicMaster</li>
+                  <li>Managed daily station rotation and oversaw programming for KVEX 97.5 FM (HD2 subchannel)</li>
+                </ul>
+              </li>
+              <li>
+                <strong>Sound Engineer:</strong>
+                <ul>
+                  <li>Provided live sound reinforcement for concerts, campus events, and remote broadcasts</li>
+                  <li>Handled setup, operation, and teardown under tight show timelines</li>
+                  <li>Served as one of the primary mixing and mastering engineer for <a
+                      href="https://www.kvsc.org/music/monday-night-live/" target="_blank" rel="noopener">Monday Night
+                      Live</a></li>
+                  <li>Edited and polished live studio recordings in Pro Tools for Bandcamp release</li>
+                  <li>Operated the on-air studio board during Monday Night Live tapings and in-studio broadcast sessions
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <strong>On-Air Host:</strong>
+                <ul>
+                  <li>Hosted <a href="https://spinitron.com/KVSC/dj/172772/Beck" target="_blank" rel="noopener">various
+                      programs</a> across eclectic and specialty formats, building shows around independent and
+                    alternative music</li>
+                  <li>Created and hosted <a href="https://spinitron.com/KVSC/show/289520/The-Moshpit" target="_blank"
+                      rel="noopener">The Moshpit</a></li>
+                  <li>Produced <a
+                      href="https://drive.google.com/drive/folders/1A9IMFSlSN50rLagsaQSHKBkP95zZMX10?usp=drive_link"
+                      target="_blank" rel="noopener">Crispy Critics</a>, a recurring audio project distributed through
+                    station programming</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </article>
 
+        <article class="timeline-item">
+          <div class="timeline-date">September 2024 - Present</div>
+          <div>
+            <h3>Video Production Assistant @ Herb Brook National Hockey Center</h3>
+            <p class="role">St. Cloud, MN</p>
+            <ul>
+              <li>Operated replay camera and produced game melts for the St. Cloud State University women's hockey team.
+              </li>
+              <li>Assisted with setup, operation, and teardown of penalty box and robotic camera systems.</li>
+              <li>Supported live streaming and recording of SCSU men's and women's hockey games.</li>
+              <li>Collaborated with production crew in a fast-paced, live sports environment.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
 
-    <div class="card mb-4 project-card">
-      <div class="card-body">
-        <h5>Web Development for PEAK Health Nepal | Senior Project</h5>
-        <div class="d-flex justify-content-between align-items-center mb-2">
-          <p class="text-muted mb-0">React, PostgreSQL, Node.js</p>
-          <p class="text-muted mb-0">Fall 2025 - Spring 2026</p>
-        </div>
-        <p>
-          My senior project involved developing a web platform that
-          work to expand access to quality healthcare in underserved regions. The project focused on building a website
-          for an ICU unit in Nepal that supports both fundraising and medical education. The site allows users to donate
-          directly to support critical care services, helping address gaps in healthcare access in remote communities
-          where resources are often limited. In addition, the platform provides nurses with
-          access to training materials and resources to improve patient care and clinical skills. Administrative
-          controls were also implemented, enabling staff to manage content, oversee donations, and maintain the system
-          efficiently, creating a centralized, scalable tool to support both the operational and educational needs of
-          the ICU.
-        </p>
-        <div class="project-images-container">
-          <div class="project-image">
-            <img src="pics/peak_homepage.jpg" alt="PEAK Health Nepal Homepage" />
-            <div class="image-overlay">
+    <section class="section skills-section" id="skills" aria-labelledby="skills-title">
+      <div class="section-heading">
+        <p class="section-kicker">Skills at a glance</p>
+        <h2 id="skills-title">Jack of all trades, master of some<span class="punct">.//</span></h2>
+      </div>
+      <div class="skills-grid">
+        <section class="skill-group" aria-labelledby="languages-title">
+          <h3 id="languages-title">Languages</h3>
+          <p>C++, Python, Java, JavaScript, HTML, CSS, SQL, Go, TypeScript</p>
+        </section>
+        <section class="skill-group" aria-labelledby="frameworks-title">
+          <h3 id="frameworks-title">Frameworks</h3>
+          <p>
+            React, Next.js, TailwindCSS, Bootstrap, Node.js, Express, PostgreSQL, MongoDB, Qdrant,
+            ClickHouse, Redis, Prisma, gRPC, Docker, Kubernetes, Google Cloud Platform, Pandas, NumPy,
+            Matplotlib, SciPy, FastAPI, Material-UI, Chart.js, D3.js, Auth0, Stripe, DSPy, OpenAI,
+            Anthropic
+          </p>
+        </section>
+        <section class="skill-group" aria-labelledby="tools-title">
+          <h3 id="tools-title">Tools</h3>
+          <p>
+            Git, GitHub, GitLab, GitLab CI/CD, Linear, ESLint, Prettier, Vercel, ProTools,
+            Adobe Audition, Adobe Premiere Pro, MusicMaster, ENCO, VSCode, Jupyter Notebook
+          </p>
+        </section>
+      </div>
+    </section>
+
+    <section class="section work-section" id="work" aria-labelledby="work-title">
+      <div class="section-heading">
+        <p class="section-kicker">Selected work</p>
+        <h2 id="work-title">Recent projects<span class="punct">()</span></h2>
+      </div>
+
+      <article class="project project-featured" aria-labelledby="peak-title">
+        <div class="project-index">01</div>
+        <div class="project-content">
+          <div class="project-body">
+            <div class="project-meta">
+              <span>Fall 2025 - Spring 2026</span>
+              <span>React, PostgreSQL, Node.js</span>
+            </div>
+            <h3 id="peak-title">Web Development for PEAK Health Nepal | Senior Project</h3>
+            <p>
+              A web platform for an ICU unit in Nepal that supports fundraising, medical education, and staff
+              administration. The site allows users to donate to critical care services while giving nurses access to
+              training materials and resources.
+            </p>
+            <details>
+              <summary>Read the longer context</summary>
               <p>
-                Homepage of the PEAK Health Nepal website
+                My senior project involved developing a web platform that works to expand access to quality healthcare
+                in
+                underserved regions. Administrative controls were implemented so staff can manage content, oversee
+                donations, and maintain a centralized, scalable tool to support both operational and educational needs.
               </p>
+            </details>
+            <div class="project-links">
+              <a href="https://peakhealthnepal.org" target="_blank" rel="noopener"
+                aria-label="PEAK Health Nepal live site">
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9q-.13 0-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z" />
+                  <path
+                    d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4 4 0 0 1-.82 1H12a3 3 0 1 0 0-6z" />
+                </svg>
+                Live site
+              </a>
             </div>
           </div>
-          <div class="project-image">
-            <img src="pics/peak_donation_page.jpg" alt="PEAK Health Nepal Donation Page" />
-            <div class="image-overlay">
-              <p>PEAK Health Nepal Donation Page</p>
-            </div>
+          <div class="project-media" aria-label="PEAK Health Nepal screenshots">
+            <figure>
+              <img src="pics/peak_homepage.jpg" alt="PEAK Health Nepal homepage" loading="lazy" />
+              <figcaption>Homepage of the PEAK Health Nepal website</figcaption>
+            </figure>
+            <figure>
+              <img src="pics/peak_donation_page.jpg" alt="PEAK Health Nepal donation page" loading="lazy" />
+              <figcaption>PEAK Health Nepal donation page</figcaption>
+            </figure>
           </div>
         </div>
-        <br>
-        <div class="icon-links">
-          <a href="https://peakhealthnepal.org" target="_blank"><i class="fas fa-globe"></i></a>
-        </div>
+      </article>
+
+      <div class="project-list">
+        <article class="project" aria-labelledby="spotify-title">
+          <div class="project-index">02</div>
+          <div class="project-content">
+            <div class="project-meta">
+              <span>Summer 2024</span>
+              <span>Python, Streamlit, Spotify API</span>
+            </div>
+            <h3 id="spotify-title">KVSC Spotify Playlist Generator</h3>
+            <p>
+              A web app that creates Spotify playlists from the weekly KVSC Top 30 NACC chart. It uses scraping and the
+              Spotify API, then provides a correlation matrix for audio features like danceability and energy.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/Beck-MN/KVSC-Spotify-App" target="_blank" rel="noopener"
+                aria-label="KVSC Spotify App repository">
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                </svg>
+                Repository
+              </a>
+            </div>
+            <div class="project-media" aria-label="KVSC Spotify Playlist Generator screenshots">
+              <figure>
+                <img src="pics/spotify_app.jpg" alt="The playlist generator showing the weekly KVSC Top 30"
+                  loading="lazy" />
+                <figcaption>Top 30 playlist generator app</figcaption>
+              </figure>
+              <figure>
+                <img src="pics/kvsc_top.jpg" alt="The Weekly Top 30 chart on the KVSC website" loading="lazy" />
+                <figcaption>Source Weekly Top 30 chart on KVSC.org</figcaption>
+              </figure>
+            </div>
+          </div>
+        </article>
+
+        <article class="project" aria-labelledby="journal-title">
+          <div class="project-index">03</div>
+          <div class="project-content">
+            <div class="project-meta">
+              <span>Summer 2025</span>
+              <span>React, Node.js, Netlify, MongoDB, Render</span>
+            </div>
+            <h3 id="journal-title">Long Distance Thought Journal</h3>
+            <p>
+              A daily thought portal for long-distance couples built with React.js and Node.js. The platform logs daily
+              thoughts and moods with MongoDB storage, Netlify frontend deployment, and Render web services.
+            </p>
+            <div class="project-links">
+              <a href="https://janehasacomplaint.com" target="_blank" rel="noopener"
+                aria-label="Long Distance Thought Journal live site">
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9q-.13 0-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z" />
+                  <path
+                    d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4 4 0 0 1-.82 1H12a3 3 0 1 0 0-6z" />
+                </svg>
+                Live site
+              </a>
+              <a href="https://github.com/Beck-MN/Complaint-Portal" target="_blank" rel="noopener"
+                aria-label="Long Distance Thought Journal repository">
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                </svg>
+                Repository
+              </a>
+            </div>
+            <div class="project-media" aria-label="Long Distance Thought Journal screenshots">
+              <figure>
+                <img src="pics/portal.jpg" alt="The thought portal interface for logging moods and notes"
+                  loading="lazy" />
+                <figcaption>Daily thought and mood entry interface</figcaption>
+              </figure>
+              <figure>
+                <img src="pics/portal_db.jpg" alt="MongoDB Atlas cluster powering the thought portal" loading="lazy" />
+                <figcaption>MongoDB Atlas cluster behind the app</figcaption>
+              </figure>
+            </div>
+          </div>
+        </article>
+
+        <article class="project" aria-labelledby="mnl-title">
+          <div class="project-index">04</div>
+          <div class="project-content">
+            <div class="project-meta">
+              <span>Summer 2025</span>
+              <span>ProTools, Adobe Audition, Sound Design</span>
+            </div>
+            <h3 id="mnl-title">Monday Night Live CD 2025</h3>
+            <p>
+              A production project where I served as one of the main mixing and mastering engineers for KVSC's Monday
+              Night Live CD. I also operated the on-air studio board for the live show recordings.
+            </p>
+            <div class="project-links">
+              <a href="https://kvsc.bandcamp.com/album/monday-night-live-season-34" target="_blank" rel="noopener"
+                aria-label="Monday Night Live CD live release">
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9q-.13 0-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z" />
+                  <path
+                    d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4 4 0 0 1-.82 1H12a3 3 0 1 0 0-6z" />
+                </svg>
+                Live release
+              </a>
+            </div>
+            <div class="project-media" aria-label="Monday Night Live CD photos">
+              <figure>
+                <img src="pics/mnl_cd.jpg" alt="Monday Night Live Season 34 album cover art" loading="lazy" />
+                <figcaption>Season 34 release artwork</figcaption>
+              </figure>
+              <figure>
+                <img src="pics/mnl_stu.jpg" alt="Mixing and mastering session in the studio with Pro Tools open"
+                  loading="lazy" />
+                <figcaption>Mixing and mastering the live recordings</figcaption>
+              </figure>
+            </div>
+          </div>
+        </article>
+
+        <article class="project" aria-labelledby="farlands-title">
+          <div class="project-index">05</div>
+          <div class="project-content">
+            <div class="project-meta">
+              <span>Fall 2024</span>
+              <span>PHP, MySQL, HTML, CSS</span>
+            </div>
+            <h3 id="farlands-title">Minecraft Farlands Speedrun Tracker</h3>
+            <p>
+              A website created to track the progress of the Farlands Speedrun. I assisted with database design, schema
+              creation, and implementation of the site's tracking features.
+            </p>
+            <div class="project-links">
+              <a href="https://farlands.cc" target="_blank" rel="noopener"
+                aria-label="Farlands Speedrun Tracker live site">
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9q-.13 0-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z" />
+                  <path
+                    d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4 4 0 0 1-.82 1H12a3 3 0 1 0 0-6z" />
+                </svg>
+                Live site
+              </a>
+            </div>
+            <div class="project-media" aria-label="Minecraft Farlands Speedrun Tracker screenshots">
+              <figure>
+                <img src="pics/farlands.jpg" alt="The Farlands speedrun tracker leaderboard table" loading="lazy" />
+                <figcaption>Speedrun progress leaderboard</figcaption>
+              </figure>
+              <figure>
+                <img src="pics/farlands_2.webp" alt="The distorted terrain of the Minecraft Far Lands" loading="lazy" />
+                <figcaption>The Far Lands terrain being tracked</figcaption>
+              </figure>
+            </div>
+          </div>
+        </article>
       </div>
-    </div>
+    </section>
 
-    <!-- KVSC Spotify Project -->
-    <div class="card mb-4 project-card">
-      <div class="card-body">
-        <h5>KVSC Spotify Playlist Generator</h5>
-        <div class="d-flex justify-content-between align-items-center mb-2">
-          <p class="text-muted mb-0">Python, Streamlit, Spotify API</p>
-          <p class="text-muted mb-0">Summer 2024</p>
-        </div>
-        <p>
-          The KVSC Spotify Playlist Generator is a web app designed to create
-          a Spotify playlist from the weekly KVSC Top 30 NACC chart. Using web
-          scraping and the Spotify API, it automatically compiles the playlist
-          and even provides a correlation matrix to analyze audio features
-          such as danceability, energy, and more.
-        </p>
-        <div class="project-images-container">
-          <div class="project-image">
-            <img src="pics/spotify_app.jpg" alt="KVSC Spotify Playlist Generator Screenshot" />
-            <div class="image-overlay">
-              <p>
-                Web app that creates Spotify playlists from KVSC's weekly Top
-                30 chart
-              </p>
-            </div>
-          </div>
-          <div class="project-image">
-            <img src="pics/kvsc_top.jpg" alt="KVSC's weekly Top 30 chart" />
-            <div class="image-overlay">
-              <p>KVSC's weekly Top 30 chart</p>
-            </div>
-          </div>
-        </div>
-        <div style="display: flex; justify-content: center;">
-          <iframe style="border-radius:4px"
-            src="https://open.spotify.com/embed/playlist/4jFSmTrqs5lu827RUl6WCa?utm_source=generator&theme=0"
-            width="98%" height="352" frameBorder="0" allowfullscreen=""
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-        </div>
-        <br>
-        <div class="icon-links">
-          <a href="https://github.com/Beck-MN/KVSC-Spotify-App" target="_blank"><i class="fab fa-github"></i></a>
-        </div>
+    <section class="section notes-section" id="notes" aria-labelledby="notes-title">
+      <div class="section-heading">
+        <p class="section-kicker">Outside code</p>
+        <h2 id="notes-title">A few personal notes from the original site.</h2>
       </div>
-    </div>
+      <ul class="photo-grid">
+        <li>
+          <figure>
+            <img src="pics/ari_2.jpg" alt="Beck holding his cat Ari under string lights" loading="lazy" />
+            <figcaption>My cat, Ari.</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img src="pics/fam.jpg" alt="Beck with his dad and sister on a tree-lined path in France" loading="lazy" />
+            <figcaption>My dad, my sister, and me in France.</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img src="pics/wild_game.jpg" alt="Beck and a friend at a Minnesota Wild hockey game" loading="lazy" />
+            <figcaption>A Wild game with my best friend.</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img src="pics/bttm.jpg" alt="The Back to the Movies cast in a studio" loading="lazy" />
+            <figcaption>The Back to the Movies cast.</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img src="pics/up_north.jpg" alt="Sunset over a lake seen from a boat up north" loading="lazy" />
+            <figcaption>Evenings up north.</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img src="pics/airplane.jpg" alt="An airplane wing above the clouds" loading="lazy" />
+            <figcaption>Always up for traveling.</figcaption>
+          </figure>
+        </li>
+      </ul>
+    </section>
 
-    <!-- Thought Journal Project -->
-    <div class="card mb-4 project-card">
-      <div class="card-body">
-        <h5>Long Distance Thought Journal</h5>
-        <div class="d-flex justify-content-between align-items-center mb-2">
-          <p class="text-muted mb-0">
-            React, Node.js, Netlify, MongoDB, Render
-          </p>
-          <p class="text-muted mb-0">Summer 2025</p>
-        </div>
-        <p>
-          A daily thought portal for long distance couples. This application is built with React.js and Node.js, made to
-          help log daily thoughts and moods.
-          Built with MongoDB for data storage and deployed on Netlify (Frontend) and Render (Web Services). The platform
-          features an emoji-based system with multiple distinct moods and three priority levels.
-        </p>
-        <div class="project-images-container">
-          <div class="project-image">
-            <img src="pics/portal.jpg" alt="Long Distance Thought Journal Interface" />
-            <div class="image-overlay">
-              <p>Main interface of the thought journal application</p>
-            </div>
-          </div>
-          <div class="project-image">
-            <img src="pics/portal_db.jpg" alt="MongoDB Database" />
-            <div class="image-overlay">
-              <p>Database structure showing mood and priority tracking</p>
-            </div>
-          </div>
-        </div>
-        <div class="icon-links">
-          <a href="https://github.com/Beck-MN/Complaint-Portal" target="_blank"><i class="fab fa-github"></i></a>
-          <a href="https://janehasacomplaint.com" target="_blank"><i class="fas fa-globe"></i></a>
-        </div>
+    <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="section-heading">
+        <p class="section-kicker">Contact</p>
+        <h2 id="contact-title">Reach out and tell me about your day<span class="punct">.//</span></h2>
       </div>
-    </div>
-
-    <!-- MNL CD Project -->
-    <div class="card mb-4 project-card">
-      <div class="card-body">
-        <h5>Monday Night Live CD 2025</h5>
-        <div class="d-flex justify-content-between align-items-center mb-2">
-          <p class="text-muted mb-0">
-            ProTools, Adobe Audition, Sound Design
-          </p>
-          <p class="text-muted mb-0">Summer 2025</p>
-        </div>
-        <p>
-          I was one of the main mixer and mastering engineers for the Monday
-          Night Live CD 2025. I was responsible for the audio mixing and
-          mastering of the various bands we had perform at our studio at KVSC.
-          I was also the main on-air studio board operator for the live show
-          recordings.
-        </p>
-        <div class="project-images-container">
-          <div class="project-image">
-            <img src="pics/mnl_cd.jpg" alt="Monday Night Live CD Cover" />
-            <div class="image-overlay">
-              <p>Cover art for the 2025 Monday Night Live CD compilation</p>
-            </div>
-          </div>
-          <div class="project-image">
-            <img src="pics/mnl_stu.jpg" alt="Monday Night Live Studio" />
-            <div class="image-overlay">
-              <p>Monday Night Live Studio</p>
-            </div>
-          </div>
-        </div>
-        <div class="icon-links">
-          <a href="https://kvsc.bandcamp.com/album/monday-night-live-season-34" target="_blank"><i
-              class="fas fa-globe"></i></a>
-        </div>
+      <div class="contact-grid">
+        <a href="mailto:beck.christensen@gmail.com">
+          <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            viewBox="0 0 16 16">
+            <path
+              d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+          </svg>
+          beck.christensen@gmail.com
+        </a>
+        <a href="https://github.com/Beck-MN" target="_blank" rel="noopener">
+          <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            viewBox="0 0 16 16">
+            <path
+              d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+          </svg>
+          GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/charles-beck-christensen/" target="_blank" rel="noopener">
+          <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            viewBox="0 0 16 16">
+            <path
+              d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+          </svg>
+          LinkedIn
+        </a>
+        <a href="docs/Charles_Beck_Christensen_Resume.pdf" download>
+          <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            viewBox="0 0 16 16">
+            <path
+              d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5" />
+            <path
+              d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z" />
+          </svg>
+          Resume
+        </a>
       </div>
-    </div>
+    </section>
+  </main>
 
-    <!-- Farlands Project -->
-    <div class="card mb-4 project-card">
-      <div class="card-body">
-        <h5>Minecraft Farlands Speedrun Tracker</h5>
-        <div class="d-flex justify-content-between align-items-center mb-2">
-          <p class="text-muted mb-0">PHP, MySQL, HTML, CSS</p>
-          <p class="text-muted mb-0">Fall 2024</p>
-        </div>
-        <p>
-          Website created to track the progress of the Farlands Speedrun.
-          Built with PHP and MySQL, the website allows users to view the
-          current speedrun and track their own progress. I assisted in the
-          database design and schema creation, as well as the implementation
-          of the website's features.
-        </p>
-        <div class="project-images-container">
-          <div class="project-image">
-            <img src="pics/farlands.jpg" alt="Farlands Speedrun Tracker Interface" />
-            <div class="image-overlay">
-              <p>User interface for tracking Farlands speedrun progress</p>
-            </div>
-          </div>
-          <div class="project-image">
-            <img src="pics/farlands_2.webp" alt="Minecraft Farlands" />
-            <div class="image-overlay">
-              <p>In-game view of the Minecraft Farlands</p>
-            </div>
-          </div>
-        </div>
-        <div class="icon-links">
-          <a href="https://farlands.cc" target="_blank"><i class="fas fa-globe"></i></a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Image Gallery -->
-    <h4 class="mb-3" id="gallery">Image Gallery</h4>
-    <div class="card mb-4">
-      <div class="card-body">
-        <div class="row g-3" id="imageGallery">
-          <div class="col-lg-4 col-md-6">
-            <div class="gallery-item">
-              <img src="pics/ari_1.jpg" alt="Ari and I" class="gallery-image" data-bs-toggle="modal"
-                data-bs-target="#imageModal" onclick="showImage('pics/ari_1.jpg', 'My cat Ari ❤️')">
-              <div class="image-overlay">
-                <p>My cat Ari ❤️</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="gallery-item">
-              <img src="pics/fam.jpg" alt="Family" class="gallery-image" data-bs-toggle="modal"
-                data-bs-target="#imageModal" onclick="showImage('pics/fam.jpg', 'Me,My Dad, and Sister in France')">
-              <div class="image-overlay">
-                <p>Me, My Dad, and Sister in France</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="gallery-item">
-              <img src="pics/wild_game.jpg" alt="Wild Game" class="gallery-image" data-bs-toggle="modal"
-                data-bs-target="#imageModal" onclick="showImage('pics/wild_game.jpg', 'Wild Game w/ my best friend')">
-              <div class="image-overlay">
-                <p>Wild Game w/ my best friend</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="gallery-item">
-              <img src="pics/bttm.jpg" alt="Back to the Movies cast" class="gallery-image" data-bs-toggle="modal"
-                data-bs-target="#imageModal" onclick="showImage('pics/bttm.jpg', 'Back to the Movies cast')">
-              <div class="image-overlay">
-                <p>Back to the Movies cast</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="gallery-item">
-              <img src="pics/airplane.jpg" alt="Airplane" class="gallery-image" data-bs-toggle="modal"
-                data-bs-target="#imageModal" onclick="showImage('pics/airplane.jpg', 'Love traveling')">
-              <div class="image-overlay">
-                <p>Love traveling</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="gallery-item">
-              <img src="pics/up_north.jpg" alt="Up North" class="gallery-image" data-bs-toggle="modal"
-                data-bs-target="#imageModal" onclick="showImage('pics/up_north.jpg', 'Love being up north')">
-              <div class="image-overlay">
-                <p>Love being up north</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Image Modal -->
-    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="imageModalLabel">Image</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body text-center">
-            <img id="modalImage" src="" alt="" class="img-fluid">
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Skills -->
-    <h4 class="mb-3" id="skills">Skills</h4>
-    <div class="card mb-4">
-      <div class="card-body">
-        <div class="mb-2"><strong>Languages</strong></div>
-        <div class="d-flex flex-wrap mb-3">
-          <span class="badge lang">C++</span>
-          <span class="badge lang">Python</span>
-          <span class="badge lang">Java</span>
-          <span class="badge lang">JavaScript</span>
-          <span class="badge lang">HTML</span>
-          <span class="badge lang">CSS</span>
-          <span class="badge lang">SQL</span>
-          <span class="badge lang">Go</span>
-          <span class="badge lang">TypeScript</span>
-        </div>
-
-        <div class="mb-2"><strong>Frameworks & Platforms</strong></div>
-        <div class="d-flex flex-wrap mb-3">
-          <span class="badge framework">React</span>
-          <span class="badge framework">Next.js</span>
-          <span class="badge framework">TailwindCSS</span>
-          <span class="badge framework">Bootstrap</span>
-          <span class="badge framework">Node.js</span>
-          <span class="badge framework">Express</span>
-          <span class="badge framework">PostgreSQL</span>
-          <span class="badge framework">MongoDB</span>
-          <span class="badge framework">Qdrant</span>
-          <span class="badge framework">ClickHouse</span>
-          <span class="badge framework">Redis</span>
-          <span class="badge framework">Prisma</span>
-          <span class="badge framework">gRPC</span>
-          <span class="badge framework">Docker</span>
-          <span class="badge framework">Kubernetes</span>
-          <span class="badge framework">Google Cloud Platform</span>
-        </div>
-
-        <div class="mb-2"><strong>Libraries</strong></div>
-        <div class="d-flex flex-wrap mb-3">
-          <span class="badge library">Pandas</span>
-          <span class="badge library">NumPy</span>
-          <span class="badge library">Matplotlib</span>
-          <span class="badge library">SciPy</span>
-          <span class="badge library">FastAPI</span>
-          <span class="badge library">Material-UI</span>
-          <span class="badge library">Chart.js</span>
-          <span class="badge library">D3.js</span>
-          <span class="badge library">Auth0</span>
-          <span class="badge library">Stripe</span>
-          <span class="badge library">DSPy</span>
-          <span class="badge library">OpenAI</span>
-          <span class="badge library">Anthropic</span>
-        </div>
-
-        <div class="mb-2"><strong>Software</strong></div>
-        <div class="d-flex flex-wrap mb-3">
-          <span class="badge software">ProTools</span>
-          <span class="badge software">Adobe Audition</span>
-          <span class="badge software">Adobe Premiere Pro</span>
-          <span class="badge software">MusicMaster</span>
-          <span class="badge software">ENCO</span>
-          <span class="badge software">VSCode</span>
-          <span class="badge software">Jupyter Notebook</span>
-        </div>
-
-        <div class="mb-2"><strong>Tools & DevOps</strong></div>
-        <div class="d-flex flex-wrap">
-          <span class="badge tools">Git</span>
-          <span class="badge tools">GitHub</span>
-          <span class="badge tools">GitLab</span>
-          <span class="badge tools">GitLab CI/CD</span>
-          <span class="badge tools">Linear</span>
-          <span class="badge tools">ESLint</span>
-          <span class="badge tools">Prettier</span>
-          <span class="badge tools">Vercel</span>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Footer -->
-  <footer class="text-center mt-5 mb-3 text-muted small">
+  <footer class="site-footer">
     <p><i>"This must be the place..."</i> - David Byrne</p>
-    <p>
-      <a href="https://youtu.be/jOB3IYBcJEE?si=LBYLgyGTrKcI_44z" target="_blank">
-        HxC 🤘</a>
-    </p>
+    <p><a href="https://youtu.be/jOB3IYBcJEE?si=LBYLgyGTrKcI_44z" target="_blank" rel="noopener">HxC</a></p>
+    <p>CBC &copy; 2026</p>
   </footer>
-
-  <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <script>
-    AOS.init({ duration: 200, once: true });
-
-    // Gallery modal functionality
-    function showImage(src, title) {
-      document.getElementById('modalImage').src = src;
-      document.getElementById('modalImage').alt = title;
-      document.getElementById('imageModalLabel').textContent = title;
-    }
-
     (function () {
-      var nav = document.querySelector('.section-nav');
-      var toggle = document.getElementById('section-nav-toggle');
-      var menu = document.getElementById('section-nav-menu');
-      if (!nav || !toggle || !menu) return;
+      var header = document.querySelector('.site-header');
+      var toggle = document.getElementById('menu-toggle');
+      var panel = document.getElementById('menu-panel');
 
-      function setOpen(open) {
-        nav.classList.toggle('section-nav--open', open);
-        toggle.setAttribute('aria-expanded', open);
-        toggle.setAttribute('aria-label', open ? 'Close section menu' : 'Open section menu');
-        menu.setAttribute('aria-hidden', !open);
+      if (!header || !toggle || !panel) return;
+
+      function setMenu(open) {
+        header.classList.toggle('menu-open', open);
+        toggle.setAttribute('aria-expanded', String(open));
       }
 
-      nav.addEventListener('click', function (e) {
-        e.stopPropagation();
-      });
-
       toggle.addEventListener('click', function () {
-        setOpen(!nav.classList.contains('section-nav--open'));
+        setMenu(!header.classList.contains('menu-open'));
       });
 
-      document.addEventListener('click', function () {
-        setOpen(false);
+      panel.addEventListener('click', function (event) {
+        if (event.target.closest('a')) setMenu(false);
       });
 
-      document.addEventListener('keydown', function (e) {
-        if (e.key === 'Escape') setOpen(false);
+      document.addEventListener('click', function (event) {
+        if (!header.contains(event.target)) setMenu(false);
       });
 
-      menu.querySelectorAll('a[href^="#"]').forEach(function (link) {
-        link.addEventListener('click', function (e) {
-          e.preventDefault();
-          var hash = link.getAttribute('href');
-          var el = document.querySelector(hash);
-          if (!el) return;
-          var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-          el.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth', block: 'start' });
-          setOpen(false);
-          if (history.replaceState) history.replaceState(null, '', hash);
-        });
+      document.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape') setMenu(false);
       });
     })();
   </script>

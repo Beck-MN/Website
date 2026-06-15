@@ -1,76 +1,52 @@
-# Personal Portfolio Website
+# beckchristensen.dev
 
-A modern, responsive portfolio website built with HTML, CSS, and Bootstrap. Features a sleek dark mode design with smooth animations and a clean, professional layout.
+Personal portfolio website for Charles Beck Christensen — software engineering graduate, audio engineer, and radio host. Built with vanilla HTML, CSS, and minimal JavaScript. No frameworks, no build step.
 
-## Features
+## Stack
 
-- 🌙 Dark mode by default
-- 📱 Fully responsive design
-- 🎨 Modern UI with smooth animations
-- 🖼️ Project showcase section
-- 💼 Work experience timeline
-- 🎓 Education section
-- 🛠️ Skills showcase
-- 🔗 Social media integration
-- 📧 Contact information
+- HTML5 (semantic markup)
+- CSS3 (custom properties, grid, flexbox, clamp-based fluid type)
+- Vanilla JS (dropdown menu toggle only)
+- Martian Mono via Google Fonts
+- Netlify (deployment)
 
-## Tech Stack
+## Structure
 
-- HTML5
-- CSS3
-- Bootstrap 5
-- Font Awesome Icons
-- Google Fonts (Work Sans & Lora)
-- AOS (Animate On Scroll)
-
-## Getting Started
-
-1. Clone the repository:
-```bash
-git clone https://github.com/Beck-MN/Website.git
+```
+/
+  index.html        — all content and markup
+  styles.css        — all styles
+  pics/             — project screenshots and personal photos
+  docs/             — resume PDF
+  netlify.toml      — Netlify deployment config
 ```
 
-2. Open `index.html` in your browser to view the website locally.
+## Running locally
 
-3. Customize the content:
-   - Replace placeholder text in `index.html`
-   - Add your profile picture as `pics/profile.jpg`
-   - Update social media links
-   - Add your projects and experience
-   - Customize colors in `styles.css`
+Open `index.html` directly in a browser. No build step or local server required.
 
 ## Deployment
 
-This website is configured for easy deployment on Netlify:
-
-1. Push your code to GitHub
-2. Connect your repository to Netlify
-3. Deploy!
-
-The `netlify.toml` file is already configured for optimal deployment.
+Hosted on Netlify. Push to the connected GitHub branch to deploy automatically. The `netlify.toml` is already configured.
 
 ## Customization
 
-### Colors
-Edit the CSS variables in `styles.css` to change the color scheme:
+CSS variables are defined at the top of `styles.css`:
+
 ```css
 :root {
-  --bg: #1a1a1a;
-  --text: #e1e1e1;
-  --accent: #6c5ce7;
-  /* ... other variables ... */
+  --bg: #151312;
+  --paper: #faf7f3;
+  --muted: #aaa19d;
+  --line: rgba(250, 247, 243, 0.16);
+  --accent: #d67fd6;
+  --max: 1180px;
+  --font-mono: "Martian Mono", ui-monospace, monospace;
 }
 ```
 
-### Fonts
-The website uses Google Fonts. To change fonts, update the font-family properties in `styles.css` and the Google Fonts link in `index.html`.
-
-## License
-
-MIT License - feel free to use this template for your own portfolio!
-
 ## Contact
 
-Me - [Beck.Christensen@gmail.com](mailto:beck.christensen@gmail.com)
+Beck Christensen — [beck.christensen@gmail.com](mailto:beck.christensen@gmail.com)
 
-Project Link: [https://github.com/Beck-MN/Website](https://github.com/Beck-MN/Website)
+GitHub: [Beck-MN/Website](https://github.com/Beck-MN/Website)
