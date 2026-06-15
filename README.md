@@ -7,7 +7,7 @@ Personal portfolio website for Charles Beck Christensen — software engineering
 - HTML5 (semantic markup)
 - CSS3 (custom properties, grid, flexbox, clamp-based fluid type)
 - Vanilla JS (dropdown menu toggle only)
-- Martian Mono via Google Fonts
+- Space Mono via Google Fonts
 - Netlify (deployment)
 
 ## Structure
@@ -33,7 +33,7 @@ CSS variables are defined at the top of `styles.css`:
   --line: rgba(250, 247, 243, 0.16);
   --accent: #d67fd6;
   --max: 1180px;
-  --font-mono: "Martian Mono", ui-monospace, monospace;
+  --font-mono: "Space Mono", ui-monospace, monospace;
 }
 ```
 
