@@ -21,14 +21,6 @@ Personal portfolio website for Charles Beck Christensen — software engineering
   netlify.toml      — Netlify deployment config
 ```
 
-## Running locally
-
-Open `index.html` directly in a browser. No build step or local server required.
-
-## Deployment
-
-Hosted on Netlify. Push to the connected GitHub branch to deploy automatically. The `netlify.toml` is already configured.
-
 ## Customization
 
 CSS variables are defined at the top of `styles.css`:
