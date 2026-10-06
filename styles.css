@@ -36,20 +36,6 @@ body {
   html {
     scroll-behavior: auto;
   }
-
-  .project-media figure,
-  .project-media img,
-  .photo-grid figure,
-  .photo-grid img {
-    transition: none;
-  }
-
-  .project-media figure:hover,
-  .project-media figure:hover img,
-  .photo-grid figure:hover,
-  .photo-grid figure:hover img {
-    transform: none;
-  }
 }
 
 a {
@@ -77,8 +63,6 @@ img {
 
 p,
 ul,
-ol,
-dl,
 figure {
   margin: 0;
 }
@@ -111,6 +95,7 @@ strong {
 }
 
 .site-header {
+  --gutter: clamp(1rem, 4vw, 3rem);
   position: sticky;
   top: 0;
   z-index: 20;
@@ -118,8 +103,7 @@ strong {
   grid-template-columns: minmax(15rem, 1fr) auto;
   gap: 1.25rem;
   align-items: center;
-  width: 100%;
-  padding: 1rem clamp(1rem, 4vw, 3rem);
+  padding: 1rem var(--gutter);
   background: rgba(21, 19, 18, 0.92);
   border-bottom: 1px solid var(--line);
   backdrop-filter: blur(16px);
@@ -162,17 +146,6 @@ strong {
   background: transparent;
   color: var(--paper);
   cursor: pointer;
-  font-family:
-    ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
-  font-size: 0.76rem;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-
-.menu-toggle span {
-  display: block;
-  font-size: 1rem;
-  line-height: 1;
 }
 
 .menu-toggle:hover {
@@ -180,10 +153,32 @@ strong {
   color: var(--accent);
 }
 
+/* The panel is a native popover (mobile dropdown). On desktop it sits inline,
+   so the browser's default popover box is reset here. */
 .menu-panel {
+  position: static;
   display: flex;
   align-items: center;
   gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  overflow: visible;
+}
+
+/* ponytail: 4rem hard-codes the dropdown's offset below the sticky header;
+   switch to CSS anchor positioning if the header height ever changes. */
+.menu-panel:popover-open {
+  position: fixed;
+  inset: 4rem var(--gutter) auto auto;
+  display: grid;
+  min-width: min(20rem, calc(100vw - 1.5rem));
+  padding: 0.9rem;
+  background: rgba(21, 19, 18, 0.98);
+  border: 1px solid var(--line);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.32);
 }
 
 .brand-name,
@@ -200,6 +195,8 @@ strong {
 .button,
 .project-links a,
 .contact-grid a,
+.education-degree,
+figcaption,
 summary {
   font-family:
     ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
@@ -284,7 +281,6 @@ main,
 }
 
 .hero-portrait {
-  margin: 0;
   justify-self: center;
   width: 100%;
   max-width: 17rem;
@@ -297,7 +293,6 @@ main,
 }
 
 .hero-portrait img {
-  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -305,7 +300,6 @@ main,
 }
 
 .intro-label {
-  margin-bottom: 0.85rem;
   color: var(--paper);
 }
 
@@ -350,14 +344,6 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
-  margin-top: 1.75rem;
-}
-
-.hero-intro .intro-label {
-  margin-bottom: 0;
-}
-
-.hero-intro .hero-actions {
   margin-top: 0.35rem;
 }
 
@@ -393,35 +379,6 @@ h3 {
   background: var(--paper);
   border-color: var(--paper);
   color: var(--bg);
-}
-
-.proof-strip {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  border-top: 1px solid var(--line);
-}
-
-.proof-strip div {
-  padding: 1.35rem clamp(1rem, 3vw, 2rem) 0;
-  border-right: 1px solid var(--line);
-  text-align: center;
-}
-
-.proof-strip div:last-child {
-  border-right: 0;
-}
-
-.proof-strip dt {
-  font-family: var(--font-mono);
-  font-weight: 600;
-  letter-spacing: -0.01em;
-  line-height: 1.25;
-}
-
-.proof-strip dd {
-  margin: 0.6rem 0 0;
-  color: var(--muted);
-  font-size: 0.96rem;
 }
 
 .section-heading {
@@ -483,8 +440,7 @@ h3 {
   gap: 0.75rem 1.5rem;
 }
 
-.project p,
-.project details p {
+.project p {
   max-width: 58rem;
   color: var(--muted);
 }
@@ -536,42 +492,54 @@ details[open] summary {
   margin-top: 1.5rem;
 }
 
-.project-media figure {
-  position: relative;
+/* Image cards: project screenshots and the personal photo grid */
+:is(.project-media, .photo-grid) figure {
   overflow: hidden;
   border: 1px solid var(--line);
   background: rgba(250, 247, 243, 0.02);
-  transition:
-    border-color 0.3s ease,
-    transform 0.3s ease;
 }
 
-.project-media figure:hover {
+:is(.project-media, .photo-grid) figure:hover {
   border-color: var(--accent);
-  transform: translateY(-3px);
+}
+
+:is(.project-media, .photo-grid) img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
 }
 
 .project-media img {
-  display: block;
-  width: 100%;
   aspect-ratio: 16 / 10;
-  object-fit: cover;
   object-position: top;
-  transition: transform 0.45s ease;
 }
 
-.project-media figure:hover img {
-  transform: scale(1.04);
-}
-
-.project-media figcaption {
+figcaption {
   padding: 0.7rem 0.9rem;
   color: var(--muted);
-  font-family:
-    ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
   font-size: 0.72rem;
   line-height: 1.4;
   border-top: 1px solid var(--line);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  :is(.project-media, .photo-grid) figure {
+    transition:
+      border-color 0.3s ease,
+      transform 0.3s ease;
+  }
+
+  :is(.project-media, .photo-grid) figure:hover {
+    transform: translateY(-3px);
+  }
+
+  :is(.project-media, .photo-grid) img {
+    transition: transform 0.45s ease;
+  }
+
+  :is(.project-media, .photo-grid) figure:hover img {
+    transform: scale(1.04);
+  }
 }
 
 .project-body {
@@ -592,10 +560,6 @@ details[open] summary {
     align-content: start;
     margin-top: 0;
   }
-}
-
-.timeline {
-  display: grid;
 }
 
 .timeline-item {
@@ -634,8 +598,6 @@ details[open] summary {
 
 .education-degree {
   color: var(--accent);
-  font-family:
-    ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
   font-size: 0.9rem;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -649,43 +611,6 @@ details[open] summary {
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-.photo-grid figure {
-  overflow: hidden;
-  border: 1px solid var(--line);
-  background: rgba(250, 247, 243, 0.02);
-  transition:
-    border-color 0.3s ease,
-    transform 0.3s ease;
-}
-
-.photo-grid figure:hover {
-  border-color: var(--accent);
-  transform: translateY(-3px);
-}
-
-.photo-grid img {
-  display: block;
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
-  object-position: center;
-  transition: transform 0.45s ease;
-}
-
-.photo-grid figure:hover img {
-  transform: scale(1.04);
-}
-
-.photo-grid figcaption {
-  padding: 0.7rem 0.9rem;
-  color: var(--muted);
-  font-family:
-    ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
-  font-size: 0.72rem;
-  line-height: 1.4;
-  border-top: 1px solid var(--line);
 }
 
 .contact-section {
@@ -743,41 +668,14 @@ details[open] summary {
     gap: 0.75rem;
   }
 
-  .header-menu {
-    position: relative;
-  }
-
   .menu-toggle {
     display: inline-flex;
     align-items: center;
     justify-content: center;
   }
 
-  .menu-panel {
-    position: absolute;
-    top: calc(100% + 0.65rem);
-    right: 0;
-    display: grid;
-    min-width: min(20rem, calc(100vw - 1.5rem));
-    padding: 0.9rem;
-    background: rgba(21, 19, 18, 0.98);
-    border: 1px solid var(--line);
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.32);
-    opacity: 0;
-    pointer-events: none;
-    visibility: hidden;
-    transform: translateY(-0.35rem);
-    transition:
-      opacity 160ms ease,
-      transform 160ms ease,
-      visibility 160ms ease;
-  }
-
-  .site-header.menu-open .menu-panel {
-    opacity: 1;
-    pointer-events: auto;
-    visibility: visible;
-    transform: translateY(0);
+  .menu-panel:not(:popover-open) {
+    display: none;
   }
 
   .site-nav,
@@ -802,7 +700,6 @@ details[open] summary {
     padding: 0.52rem 0.35rem;
   }
 
-  .proof-strip,
   .section-heading,
   .skills-grid,
   .education-layout,
@@ -824,16 +721,6 @@ details[open] summary {
     max-width: none;
   }
 
-  .proof-strip div {
-    padding: 1.25rem 0;
-    border-right: 0;
-    border-bottom: 1px solid var(--line);
-  }
-
-  .proof-strip div:last-child {
-    border-bottom: 0;
-  }
-
   .timeline-item {
     grid-template-columns: 1fr;
     gap: 0.8rem;
@@ -851,7 +738,8 @@ details[open] summary {
   }
 
   .site-header {
-    padding: 0.75rem;
+    --gutter: 0.75rem;
+    padding-block: 0.75rem;
   }
 
   .section {

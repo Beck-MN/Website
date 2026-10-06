@@ -7,31 +7,36 @@
   <title>Beck Christensen | Software Engineer</title>
   <meta name="description"
     content="Charles Beck Christensen is a recent software engineering graduate building backend and full-stack products with Go, React, PostgreSQL, and Node.js." />
-  <meta name="keywords" content="Portfolio, Software Engineer, Developer, Projects, Backend, Full Stack" />
   <link rel="canonical" href="https://beckchristensen.dev" />
   <meta property="og:title" content="Beck Christensen - Software Engineer" />
   <meta property="og:description" content="Backend and full-stack projects, experience, and skills." />
   <meta property="og:url" content="https://beckchristensen.dev" />
   <meta property="og:type" content="website" />
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Beck Christensen - Software Engineer" />
-  <meta name="twitter:description" content="Backend and full-stack projects, experience, and skills." />
   <link rel="icon" href="pics/favicon.ico" type="image/x-icon" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet" />
   <link href="styles.css" rel="stylesheet" />
 </head>
 
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
+  <svg style="display: none">
+    <symbol id="icon-link" viewBox="0 0 16 16">
+      <path d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9q-.13 0-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z" />
+      <path d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4 4 0 0 1-.82 1H12a3 3 0 1 0 0-6z" />
+    </symbol>
+    <symbol id="icon-github" viewBox="0 0 16 16">
+      <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+    </symbol>
+  </svg>
+
   <header class="site-header" aria-label="Primary">
     <a class="brand" href="#intro" aria-label="Back to top">
       <span class="brand-icon" aria-hidden="true">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-          class="bi bi-emoji-smile-upside-down" viewBox="0 0 16 16">
+        <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
           <path d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1m0-1a8 8 0 1 1 0 16A8 8 0 0 1 8 0" />
           <path
             d="M4.285 6.433a.5.5 0 0 0 .683-.183A3.5 3.5 0 0 1 8 4.5c1.295 0 2.426.703 3.032 1.75a.5.5 0 0 0 .866-.5A4.5 4.5 0 0 0 8 3.5a4.5 4.5 0 0 0-3.898 2.25.5.5 0 0 0 .183.683M7 9.5C7 8.672 6.552 8 6 8s-1 .672-1 1.5.448 1.5 1 1.5 1-.672 1-1.5m4 0c0-.828-.448-1.5-1-1.5s-1 .672-1 1.5.448 1.5 1 1.5 1-.672 1-1.5" />
@@ -43,22 +48,20 @@
       </span>
     </a>
     <div class="header-menu">
-      <button class="menu-toggle" type="button" id="menu-toggle" aria-expanded="false" aria-controls="menu-panel"
-        aria-label="Open navigation menu">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list-nested"
-          viewBox="0 0 16 16">
+      <button class="menu-toggle" type="button" popovertarget="menu-panel" aria-label="Navigation menu">
+        <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
           <path fill-rule="evenodd"
             d="M4.5 11.5A.5.5 0 0 1 5 11h10a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5m-2-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m-2-4A.5.5 0 0 1 1 3h10a.5.5 0 0 1 0 1H1a.5.5 0 0 1-.5-.5" />
         </svg>
       </button>
-      <div class="menu-panel" id="menu-panel">
+      <div class="menu-panel" id="menu-panel" popover onclick="this.hidePopover?.()">
         <nav class="site-nav" aria-label="Site">
           <a href="#experience">Experience</a>
           <a href="#skills">Skills</a>
           <a href="#work">Work</a>
           <a href="#contact">Contact</a>
         </nav>
-        <div class="divider hide-mobile">|</div>
+        <div class="hide-mobile">|</div>
         <nav class="contact-nav" aria-label="External links">
           <a href="https://github.com/Beck-MN" target="_blank" rel="noopener">GitHub</a>
           <a href="https://www.linkedin.com/in/charles-beck-christensen/" target="_blank" rel="noopener">LinkedIn</a>
@@ -76,9 +79,9 @@
         <div class="hero-intro">
           <p class="intro-label">Welcome in! :D</p>
           <h1 id="intro-title">
-            <span class="fancy-title">Software Development</span>
-            <span class="divider punct">/</span>
-            <span class="fancy-subtitle">Audio Engineering<span class="punct">.</span></span>
+            Software Development
+            <span class="punct">/</span>
+            Audio Engineering<span class="punct">.</span>
           </h1>
           <p class="hero-copy">
             Hey! My name is Charles Beck Christensen and I'm a recent software engineering graduate from
@@ -90,7 +93,7 @@
           <div class="hero-actions" aria-label="Primary actions">
             <a class="button button-primary" href="docs/Charles_Beck_Christensen_Resume.pdf" download>
               Download resume
-              <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
+              <svg aria-hidden="true" width="14" height="14" fill="currentColor"
                 viewBox="0 0 16 16">
                 <path fill-rule="evenodd"
                   d="M8.636 12.5a.5.5 0 0 1-.5.5H1.5A1.5 1.5 0 0 1 0 11.5v-10A1.5 1.5 0 0 1 1.5 0h10A1.5 1.5 0 0 1 13 1.5v6.636a.5.5 0 0 1-1 0V1.5a.5.5 0 0 0-.5-.5h-10a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h6.636a.5.5 0 0 1 .5.5" />
@@ -100,7 +103,7 @@
             </a>
             <a class="button" href="#work">
               See proof
-              <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
+              <svg aria-hidden="true" width="14" height="14" fill="currentColor"
                 viewBox="0 0 16 16">
                 <path fill-rule="evenodd"
                   d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
@@ -115,11 +118,9 @@
             height="612" />
         </figure>
       </div>
-
-
     </section>
 
-    <section class="section education-section" id="education" aria-labelledby="education-title">
+    <section class="section" id="education" aria-labelledby="education-title">
       <div class="section-heading">
         <p class="section-kicker">Education</p>
         <h2 id="education-title">Saint Cloud State University</h2>
@@ -129,7 +130,7 @@
         <div>
           <p>
             <strong>Key Courses:</strong> Data Structures, Object-Oriented Programming, Intro to Software Engineering,
-            Computer Organization, Operating Systems, Software Design, Software Analysis, Sofware Quality, Software
+            Computer Organization, Operating Systems, Software Design, Software Analysis, Software Quality, Software
             Construction, Game Development, Software Reverse Engineering, Human Computer Interaction, Database Systems,
             and more.
           </p>
@@ -141,12 +142,29 @@
       </div>
     </section>
 
-    <section class="section experience-section" id="experience" aria-labelledby="experience-title">
+    <section class="section" id="experience" aria-labelledby="experience-title">
       <div class="section-heading">
         <p class="section-kicker">Experience</p>
         <h2 id="experience-title">Software, operations, and production work<span class="punct">.//</span></h2>
       </div>
       <div class="timeline">
+        <article class="timeline-item">
+          <div class="timeline-date">September 2026 - Present</div>
+          <div>
+            <h3>
+              Software Engineer Intern @
+              <a href="https://getcluster.ai" target="_blank" rel="noopener">Cluster</a>
+            </h3>
+            <p class="role">New York, NY (Remote)</p>
+            <ul>
+              <li>Contributed to Cluster's platform connecting agents to 50+ GTM data sources (LinkedIn, Apollo,
+                Crunchbase, HubSpot, etc.) for automated prospecting, enrichment, and outreach.</li>
+              <li>Worked on infrastructure supporting agent orchestration and integrations at a fast-growing,
+                YC-backed startup building next-gen sales automation tools.</li>
+            </ul>
+          </div>
+        </article>
+
         <article class="timeline-item">
           <div class="timeline-date">June 2025 - August 2025</div>
           <div>
@@ -218,23 +236,26 @@
         </article>
 
         <article class="timeline-item">
-          <div class="timeline-date">September 2024 - February 2026</div>
+          <div class="timeline-date">August 2026 - Present</div>
           <div>
-            <h3>Video Production Assistant @ Herb Brook National Hockey Center</h3>
-            <p class="role">St. Cloud, MN</p>
+            <h3>Audio Visual Technician @ Mount Olivet Lutheran Church</h3>
+            <p class="role">Minneapolis, MN</p>
             <ul>
-              <li>Operated replay camera and produced game melts for the St. Cloud State University women's hockey team.
-              </li>
-              <li>Assisted with setup, operation, and teardown of penalty box and robotic camera systems.</li>
-              <li>Supported live streaming and recording of SCSU men's and women's hockey games.</li>
-              <li>Collaborated with production crew in a fast-paced, live sports environment.</li>
+              <li>Mixed live audio for vocals, instruments, and speakers across Sunday services, weddings, and
+                funerals, delivering clear, balanced sound for in-person congregants.</li>
+              <li>Produced and directed multi-camera livestream broadcasts, managing camera switching, graphics, and
+                stream stability for remote viewers in real time.</li>
+              <li>Operated broadcast software and streaming platforms to ensure reliable, high-quality delivery across
+                varying event formats and technical setups.</li>
+              <li>Collaborated with pastoral staff and event coordinators to adapt live audio and broadcast
+                configurations for the tone and requirements of each ceremony.</li>
             </ul>
           </div>
         </article>
       </div>
     </section>
 
-    <section class="section skills-section" id="skills" aria-labelledby="skills-title">
+    <section class="section" id="skills" aria-labelledby="skills-title">
       <div class="section-heading">
         <p class="section-kicker">Skills at a glance</p>
         <h2 id="skills-title">Jack of all trades, master of some<span class="punct">.//</span></h2>
@@ -262,7 +283,7 @@
       </div>
     </section>
 
-    <section class="section work-section" id="work" aria-labelledby="work-title">
+    <section class="section" id="work" aria-labelledby="work-title">
       <div class="section-heading">
         <p class="section-kicker">Selected work</p>
         <h2 id="work-title">Recent projects<span class="punct">()</span></h2>
@@ -294,13 +315,7 @@
             <div class="project-links">
               <a href="https://peakhealthnepal.org" target="_blank" rel="noopener"
                 aria-label="PEAK Health Nepal live site">
-                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                  viewBox="0 0 16 16">
-                  <path
-                    d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9q-.13 0-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z" />
-                  <path
-                    d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4 4 0 0 1-.82 1H12a3 3 0 1 0 0-6z" />
-                </svg>
+                <svg aria-hidden="true" width="16" height="16" fill="currentColor"><use href="#icon-link" /></svg>
                 Live site
               </a>
             </div>
@@ -318,172 +333,144 @@
         </div>
       </article>
 
-      <div class="project-list">
-        <article class="project" aria-labelledby="spotify-title">
-          <div class="project-index">02</div>
-          <div class="project-content">
-            <div class="project-meta">
-              <span>Summer 2024</span>
-              <span><i>Python, Streamlit, Spotify API</i></span>
-            </div>
-            <h3 id="spotify-title">KVSC Spotify Playlist Generator</h3>
-            <p>
-              A web app that creates Spotify playlists from the weekly KVSC Top 30 NACC chart. It uses scraping and the
-              Spotify API, then provides a correlation matrix for audio features like danceability and energy.
-            </p>
-            <div class="project-links">
-              <a href="https://github.com/Beck-MN/KVSC-Spotify-App" target="_blank" rel="noopener"
-                aria-label="KVSC Spotify App repository">
-                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                  viewBox="0 0 16 16">
-                  <path
-                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
-                </svg>
-                Repository
-              </a>
-            </div>
-            <div class="project-media" aria-label="KVSC Spotify Playlist Generator screenshots">
-              <figure>
-                <img src="pics/spotify_app.jpg" alt="The playlist generator showing the weekly KVSC Top 30"
-                  loading="lazy" />
-                <figcaption>Top 30 playlist generator app</figcaption>
-              </figure>
-              <figure>
-                <img src="pics/kvsc_top.jpg" alt="The Weekly Top 30 chart on the KVSC website" loading="lazy" />
-                <figcaption>Source Weekly Top 30 chart on KVSC.org</figcaption>
-              </figure>
-            </div>
+      <article class="project" aria-labelledby="spotify-title">
+        <div class="project-index">02</div>
+        <div class="project-content">
+          <div class="project-meta">
+            <span>Summer 2024</span>
+            <span><i>Python, Streamlit, Spotify API</i></span>
           </div>
-        </article>
+          <h3 id="spotify-title">KVSC Spotify Playlist Generator</h3>
+          <p>
+            A web app that creates Spotify playlists from the weekly KVSC Top 30 NACC chart. It uses scraping and the
+            Spotify API, then provides a correlation matrix for audio features like danceability and energy.
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/Beck-MN/KVSC-Spotify-App" target="_blank" rel="noopener"
+              aria-label="KVSC Spotify App repository">
+              <svg aria-hidden="true" width="16" height="16" fill="currentColor"><use href="#icon-github" /></svg>
+              Repository
+            </a>
+          </div>
+          <div class="project-media" aria-label="KVSC Spotify Playlist Generator screenshots">
+            <figure>
+              <img src="pics/spotify_app.jpg" alt="The playlist generator showing the weekly KVSC Top 30"
+                loading="lazy" />
+              <figcaption>Top 30 playlist generator app</figcaption>
+            </figure>
+            <figure>
+              <img src="pics/kvsc_top.jpg" alt="The Weekly Top 30 chart on the KVSC website" loading="lazy" />
+              <figcaption>Source Weekly Top 30 chart on KVSC.org</figcaption>
+            </figure>
+          </div>
+        </div>
+      </article>
 
-        <article class="project" aria-labelledby="journal-title">
-          <div class="project-index">03</div>
-          <div class="project-content">
-            <div class="project-meta">
-              <span>Summer 2025</span>
-              <span><i>React, Node.js, Netlify, MongoDB, Render</i></span>
-            </div>
-            <h3 id="journal-title">Long Distance Thought Journal</h3>
-            <p>
-              A daily thought portal for long-distance couples built with React.js and Node.js. The platform logs daily
-              thoughts and moods with MongoDB storage, Netlify frontend deployment, and Render web services.
-            </p>
-            <div class="project-links">
-              <a href="https://janehasacomplaint.com" target="_blank" rel="noopener"
-                aria-label="Long Distance Thought Journal live site">
-                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                  viewBox="0 0 16 16">
-                  <path
-                    d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9q-.13 0-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z" />
-                  <path
-                    d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4 4 0 0 1-.82 1H12a3 3 0 1 0 0-6z" />
-                </svg>
-                Live site
-              </a>
-              <a href="https://github.com/Beck-MN/Complaint-Portal" target="_blank" rel="noopener"
-                aria-label="Long Distance Thought Journal repository">
-                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                  viewBox="0 0 16 16">
-                  <path
-                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
-                </svg>
-                Repository
-              </a>
-            </div>
-            <div class="project-media" aria-label="Long Distance Thought Journal screenshots">
-              <figure>
-                <img src="pics/portal.jpg" alt="The thought portal interface for logging moods and notes"
-                  loading="lazy" />
-                <figcaption>Daily thought and mood entry interface</figcaption>
-              </figure>
-              <figure>
-                <img src="pics/portal_db.jpg" alt="MongoDB Atlas cluster powering the thought portal" loading="lazy" />
-                <figcaption>MongoDB Atlas cluster behind the app</figcaption>
-              </figure>
-            </div>
+      <article class="project" aria-labelledby="journal-title">
+        <div class="project-index">03</div>
+        <div class="project-content">
+          <div class="project-meta">
+            <span>Summer 2025</span>
+            <span><i>React, Node.js, Netlify, MongoDB, Render</i></span>
           </div>
-        </article>
+          <h3 id="journal-title">Long Distance Thought Journal</h3>
+          <p>
+            A daily thought portal for long-distance couples built with React.js and Node.js. The platform logs daily
+            thoughts and moods with MongoDB storage, Netlify frontend deployment, and Render web services.
+          </p>
+          <div class="project-links">
+            <a href="https://janehasacomplaint.com" target="_blank" rel="noopener"
+              aria-label="Long Distance Thought Journal live site">
+              <svg aria-hidden="true" width="16" height="16" fill="currentColor"><use href="#icon-link" /></svg>
+              Live site
+            </a>
+            <a href="https://github.com/Beck-MN/Complaint-Portal" target="_blank" rel="noopener"
+              aria-label="Long Distance Thought Journal repository">
+              <svg aria-hidden="true" width="16" height="16" fill="currentColor"><use href="#icon-github" /></svg>
+              Repository
+            </a>
+          </div>
+          <div class="project-media" aria-label="Long Distance Thought Journal screenshots">
+            <figure>
+              <img src="pics/portal.jpg" alt="The thought portal interface for logging moods and notes"
+                loading="lazy" />
+              <figcaption>Daily thought and mood entry interface</figcaption>
+            </figure>
+            <figure>
+              <img src="pics/portal_db.jpg" alt="MongoDB Atlas cluster powering the thought portal" loading="lazy" />
+              <figcaption>MongoDB Atlas cluster behind the app</figcaption>
+            </figure>
+          </div>
+        </div>
+      </article>
 
-        <article class="project" aria-labelledby="mnl-title">
-          <div class="project-index">04</div>
-          <div class="project-content">
-            <div class="project-meta">
-              <span>Summer 2025</span>
-              <span><i>ProTools, Adobe Audition, Sound Design</i></span>
-            </div>
-            <h3 id="mnl-title">Monday Night Live CD 2025</h3>
-            <p>
-              A production project where I served as one of the main mixing and mastering engineers for KVSC's Monday
-              Night Live CD. I also operated the on-air studio board for the live show recordings.
-            </p>
-            <div class="project-links">
-              <a href="https://kvsc.bandcamp.com/album/monday-night-live-season-34" target="_blank" rel="noopener"
-                aria-label="Monday Night Live CD live release">
-                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                  viewBox="0 0 16 16">
-                  <path
-                    d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9q-.13 0-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z" />
-                  <path
-                    d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4 4 0 0 1-.82 1H12a3 3 0 1 0 0-6z" />
-                </svg>
-                Live release
-              </a>
-            </div>
-            <div class="project-media" aria-label="Monday Night Live CD photos">
-              <figure>
-                <img src="pics/mnl_cd.jpg" alt="Monday Night Live Season 34 album cover art" loading="lazy" />
-                <figcaption>Season 34 release artwork</figcaption>
-              </figure>
-              <figure>
-                <img src="pics/mnl_stu.jpg" alt="Mixing and mastering session in the studio with Pro Tools open"
-                  loading="lazy" />
-                <figcaption>Mixing and mastering the live recordings</figcaption>
-              </figure>
-            </div>
+      <article class="project" aria-labelledby="mnl-title">
+        <div class="project-index">04</div>
+        <div class="project-content">
+          <div class="project-meta">
+            <span>Summer 2025</span>
+            <span><i>ProTools, Adobe Audition, Sound Design</i></span>
           </div>
-        </article>
+          <h3 id="mnl-title">Monday Night Live CD 2025</h3>
+          <p>
+            A production project where I served as one of the main mixing and mastering engineers for KVSC's Monday
+            Night Live CD. I also operated the on-air studio board for the live show recordings.
+          </p>
+          <div class="project-links">
+            <a href="https://kvsc.bandcamp.com/album/monday-night-live-season-34" target="_blank" rel="noopener"
+              aria-label="Monday Night Live CD live release">
+              <svg aria-hidden="true" width="16" height="16" fill="currentColor"><use href="#icon-link" /></svg>
+              Live release
+            </a>
+          </div>
+          <div class="project-media" aria-label="Monday Night Live CD photos">
+            <figure>
+              <img src="pics/mnl_cd.jpg" alt="Monday Night Live Season 34 album cover art" loading="lazy" />
+              <figcaption>Season 34 release artwork</figcaption>
+            </figure>
+            <figure>
+              <img src="pics/mnl_stu.jpg" alt="Mixing and mastering session in the studio with Pro Tools open"
+                loading="lazy" />
+              <figcaption>Mixing and mastering the live recordings</figcaption>
+            </figure>
+          </div>
+        </div>
+      </article>
 
-        <article class="project" aria-labelledby="farlands-title">
-          <div class="project-index">05</div>
-          <div class="project-content">
-            <div class="project-meta">
-              <span>Fall 2024</span>
-              <span><i>PHP, MySQL, HTML, CSS</i></span>
-            </div>
-            <h3 id="farlands-title">Minecraft Farlands Speedrun Tracker</h3>
-            <p>
-              A website created to track the progress of the Farlands Speedrun. I assisted with database design, schema
-              creation, and implementation of the site's tracking features.
-            </p>
-            <div class="project-links">
-              <a href="https://farlands.cc" target="_blank" rel="noopener"
-                aria-label="Farlands Speedrun Tracker live site">
-                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                  viewBox="0 0 16 16">
-                  <path
-                    d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9q-.13 0-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z" />
-                  <path
-                    d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4 4 0 0 1-.82 1H12a3 3 0 1 0 0-6z" />
-                </svg>
-                Live site
-              </a>
-            </div>
-            <div class="project-media" aria-label="Minecraft Farlands Speedrun Tracker screenshots">
-              <figure>
-                <img src="pics/farlands.jpg" alt="The Farlands speedrun tracker leaderboard table" loading="lazy" />
-                <figcaption>Speedrun progress leaderboard</figcaption>
-              </figure>
-              <figure>
-                <img src="pics/farlands_2.webp" alt="The distorted terrain of the Minecraft Far Lands" loading="lazy" />
-                <figcaption>The Far Lands terrain being tracked</figcaption>
-              </figure>
-            </div>
+      <article class="project" aria-labelledby="farlands-title">
+        <div class="project-index">05</div>
+        <div class="project-content">
+          <div class="project-meta">
+            <span>Fall 2024</span>
+            <span><i>PHP, MySQL, HTML, CSS</i></span>
           </div>
-        </article>
-      </div>
+          <h3 id="farlands-title">Minecraft Farlands Speedrun Tracker</h3>
+          <p>
+            A website created to track the progress of the Farlands Speedrun. I assisted with database design, schema
+            creation, and implementation of the site's tracking features.
+          </p>
+          <div class="project-links">
+            <a href="https://farlands.cc" target="_blank" rel="noopener"
+              aria-label="Farlands Speedrun Tracker live site">
+              <svg aria-hidden="true" width="16" height="16" fill="currentColor"><use href="#icon-link" /></svg>
+              Live site
+            </a>
+          </div>
+          <div class="project-media" aria-label="Minecraft Farlands Speedrun Tracker screenshots">
+            <figure>
+              <img src="pics/farlands.jpg" alt="The Farlands speedrun tracker leaderboard table" loading="lazy" />
+              <figcaption>Speedrun progress leaderboard</figcaption>
+            </figure>
+            <figure>
+              <img src="pics/farlands_2.webp" alt="The distorted terrain of the Minecraft Far Lands" loading="lazy" />
+              <figcaption>The Far Lands terrain being tracked</figcaption>
+            </figure>
+          </div>
+        </div>
+      </article>
     </section>
 
-    <section class="section notes-section" id="notes" aria-labelledby="notes-title">
+    <section class="section" id="notes" aria-labelledby="notes-title">
       <div class="section-heading">
         <p class="section-kicker">Outside code</p>
         <h2 id="notes-title">A few personal notes from the original site.</h2>
@@ -535,7 +522,7 @@
       </div>
       <div class="contact-grid">
         <a href="mailto:beck.christensen@gmail.com">
-          <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+          <svg aria-hidden="true" width="16" height="16" fill="currentColor"
             viewBox="0 0 16 16">
             <path
               d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
@@ -543,15 +530,11 @@
           beck.christensen@gmail.com
         </a>
         <a href="https://github.com/Beck-MN" target="_blank" rel="noopener">
-          <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-            viewBox="0 0 16 16">
-            <path
-              d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
-          </svg>
+          <svg aria-hidden="true" width="16" height="16" fill="currentColor"><use href="#icon-github" /></svg>
           GitHub
         </a>
         <a href="https://www.linkedin.com/in/charles-beck-christensen/" target="_blank" rel="noopener">
-          <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+          <svg aria-hidden="true" width="16" height="16" fill="currentColor"
             viewBox="0 0 16 16">
             <path
               d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
@@ -559,7 +542,7 @@
           LinkedIn
         </a>
         <a href="docs/Charles_Beck_Christensen_Resume.pdf" download>
-          <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+          <svg aria-hidden="true" width="16" height="16" fill="currentColor"
             viewBox="0 0 16 16">
             <path
               d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5" />
@@ -577,36 +560,6 @@
     <p><a href="https://youtu.be/jOB3IYBcJEE?si=LBYLgyGTrKcI_44z" target="_blank" rel="noopener">HxC</a></p>
     <p>CBC &copy; 2026</p>
   </footer>
-  <script>
-    (function () {
-      var header = document.querySelector('.site-header');
-      var toggle = document.getElementById('menu-toggle');
-      var panel = document.getElementById('menu-panel');
-
-      if (!header || !toggle || !panel) return;
-
-      function setMenu(open) {
-        header.classList.toggle('menu-open', open);
-        toggle.setAttribute('aria-expanded', String(open));
-      }
-
-      toggle.addEventListener('click', function () {
-        setMenu(!header.classList.contains('menu-open'));
-      });
-
-      panel.addEventListener('click', function (event) {
-        if (event.target.closest('a')) setMenu(false);
-      });
-
-      document.addEventListener('click', function (event) {
-        if (!header.contains(event.target)) setMenu(false);
-      });
-
-      document.addEventListener('keydown', function (event) {
-        if (event.key === 'Escape') setMenu(false);
-      });
-    })();
-  </script>
 </body>
 
 </html>
